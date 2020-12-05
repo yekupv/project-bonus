@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 34, 34);
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.box {
+  grid-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "footer footer footer ";
+  margin: 0 15%;
+}
+a {
+  color: rgb(235 238 239);
+  text-decoration: none;
+}
+.header h1 {
+  text-shadow: 0 0 10px white;
+}
+.img {
+  box-shadow: 0 0 20px black;
+  border-radius: 5%;
+  border: 3px bold black;
+  max-width: 700px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "home nav";
+  background-color: rgb(34, 34, 34);
+  padding: 10px 30px;
+  color: #edf0f1;
+  border-bottom: 3px solid aqua;
+}
+
+.home p {
+  padding: 0 50px 0 0;
+  margin: 0px;
+  font-size: 40px;
+}
+.nav {
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+
+  text-transform: uppercase;
+  transition: 0.5s ease-out;
+}
+.nav li:hover {
+  text-shadow: 0 0 10px aqua;
+  color: aqua;
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.signIn {
+  transition: all 0.3s ease 0s;
+  color: #edf0f1;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid aqua;
+  border-radius: 50px;
+  padding: 9px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: aqua;
+  outline: none;
+}
+
+.signIn:hover {
+  box-shadow: 0 0 10px aqua;
+}
+.home a {
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: aqua;
+}
+
+.home {
+  grid-area: "home";
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+}
+.home span {
+  color: aqua;
+  text-shadow: 0 0 10px aqua;
+}
+
+/* LEFT SIDE CONTENT*/
+.main {
+  padding: 0 20px;
+  text-align: left;
+  grid-gap: 20px;
+  grid-area: main;
+  background-color: whitesmoke;
+  border: 1px solid aqua;
+  box-shadow: 0 0 10px aqua;
+  font-weight: 500;
+}
+.main div {
+  padding: 10px 20px;
+}
+.hidden {
+  display: none;
+}
+.featuredArticle {
+  margin: 2% 0;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 50px;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+button:hover {
+  background-color: rgb(46, 45, 45);
+}
+/*RIGHT SIDE CONTENT*/
+
+.sidebar {
+  text-align: center;
+  padding: 50px 20px 0 20px;
+  grid-area: sidebar;
+  background-color: whitesmoke;
+  border: 1px solid aqua;
+  box-shadow: 0 0 10px aqua;
+  font-weight: 500;
+}
+.sidebar ul {
+  text-decoration: none;
+  list-style: none;
+}
+.sidebar li {
+  margin: 10px 0;
+}
+.topics {
+  grid-area: topics;
+}
+.item {
+  grid-area: item;
+  text-align: center;
+}
+.sidebar a {
+  color: black;
+}
+
+.sidebar img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.sidebar p {
+  text-align: center;
+}
+#topic {
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+.popularPosts {
+  text-align: center;
+}
+.popularPosts a {
+  color: white;
+}
+.popularPosts button {
+  border-radius: 0%;
+  padding: 10px 60px;
+  width: 100%;
+}
+.popularPosts img {
+  height: 240px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+/* FOOTER */
+.footer {
+  color: white;
+  text-align: center;
+  grid-area: footer;
+  margin-top: 50px;
+  grid-area: footer;
+}
+/* CONTACT US FORM */
+.login-form {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.login {
+  padding: 40px;
+  align-items: center;
+  color: white;
+  box-shadow: 0 0 15px black;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  background-color: black;
+}
+.login button {
+  border: black;
+  box-shadow: 0 0 5px whtie;
+  background-color: black;
+}
+.login button:hover {
+  text-shadow: 0 0 10px white;
+  box-shadow: 0 0 10px white;
+}
+.login h1 {
+  text-shadow: 0 0 10px white;
+}
+.login input {
+  font-weight: 300;
+  color: white;
+  background-color: black;
+  border: black;
+  border-bottom: 1px solid grey;
+  outline: 3p;
+  box-sizing: border-box;
+  margin: 40px auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  width: 80%;
+}
+::placeholder {
+  color: grey;
+}
+.login img {
+  position: relative;
+  left: 58%;
+  top: -10%;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+.login input:focus {
+  outline: none;
+  font-family: "Montserrat" sans-serif;
+  border-bottom: 3px solid white;
+}
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .header {
+    grid-template-areas:
+      "home"
+      "nav";
+  }
+  .box {
+    margin: 0 3%;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "sidebar sidebar sidebar"
+      "footer footer footer";
+  }
+  .sidebar {
+    padding: 30px;
+    margin: 0;
+  }
+  .items {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "item popularPosts"
+      "topics popularPosts";
+    grid-gap: 30px;
+  }
+  .popularPosts {
+    grid-row: 1/3;
+  }
+}
+@media (max-width: 700px) {
+  .nav {
+    display: block;
+  }
+  img {
+    margin: auto;
+  }
+  .box {
+    margin: 0 50px;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "sidebar sidebar sidebar"
+      "footer footer footer";
+  }
+  .items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item"
+      "topics";
+    margin: auto;
+  }
+  .popularPosts {
+    display: none;
+  }
+}
+/* active class */
+.active-button {
+  color: aqua;
+  text-shadow: 0 0 10px aqua;
+  font-weight: bold;
+}

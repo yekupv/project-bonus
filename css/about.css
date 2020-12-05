@@ -1,0 +1,52 @@
+.main {
+  background-color: #ffffff;
+  grid-area: main;
+  grid-column: 1/4;
+  text-align: center;
+}
+.events {
+  margin: 0;
+}
+.event {
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #ffffff;
+}
+.event-img {
+  width: 30vw;
+  height: 40vh;
+}
+img {
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+}
+
+.maps,
+.another-map,
+.and-another-map {
+  display: none;
+  height: 50vh;
+}
+#map,
+#map1,
+#map2 {
+  height: 100%;
+}
+#see-location,
+#see-location1,
+#see-location2 {
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.separator {
+  height: 3px;
+  background-color: aqua;
+  border-radius: 5px;
+  border: 1px solid aqua;
+}
+.event p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}

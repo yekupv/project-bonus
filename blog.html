@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>about</title>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="home"><a href="index.html"><p>Kino<span>Blog</span></p> </a></div>
+            <ul class="nav">
+                <li><a href="about.html" >About</a></li>
+                <li><a href="blog.html" class="active-button">Blog</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <button class="signIn" onclick="popup()">Contac Us</button>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit labore necessitatibus sint minima nihil! Laudantium, odio. Deserunt ea sunt nam vitae perferendis et esse laborum suscipit ipsa maxime. Voluptas.</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>© 2020 Makhaomi, Inc. All rights reserved.</p>
+        </footer>
+    </div>
+    <div class="login-form">
+        <div class="login">
+            <img onclick="closePopup()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/480px-OOjs_UI_icon_close.svg.png" alt="close">
+            <h1>CONTACT US</h1>
+            <input id="username" type="text" name="username" placeholder="Your Name">
+            <input id="email" type="text" name="email" placeholder="Your Email">
+            <input id="message" type="text" name="message" placeholder="Your Message">
+            <button class="signIn" onclick="closePopup()">SUBMIT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

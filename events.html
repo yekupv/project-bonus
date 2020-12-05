@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly" 
+        defer
+    ></script>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="home"><a href="index.html"><p>Kino<span>Blog</span></p> </a></div>
+            <ul class="nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="events.html" class="active-button">Events</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <button class="signIn" onclick="popup()">Contac Us</button>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="events">
+                <div class="event">
+                    <img  class="event-img" src="img/Без названия.png" alt="cannes">
+                    <hr>
+                    <p>The Cannes Festival , until 2003 called the International Film Festival (Festival international du film) and known in English as the Cannes Film Festival, is an annual film festival held in Cannes, France, which previews new films of all genres, including documentaries, from all around the world. Founded in 1946, the invitation-only festival is held annually (usually in May) at the Palais des Festivals et des Congrès</p>
+                    <hr>
+                    <div class="location">
+                        <h5 id="see-location" onclick="">See Location</h5>
+                    </div>
+                    <div class="maps">
+                        <div id="map">
+                        </div>
+                    </div>
+                </div>
+                <hr class="separator">
+                <div class="event">
+                    <img  class="event-img" src="img/3027088-inline-i-oscars.webp" alt="oscar">
+                    <hr>
+                    <p>The Academy Awards, popularly known as the Oscars,[1] are awards for artistic and technical merit in the film industry. It is regarded as the most famous and prestigious awards in the entertainment industry. Given annually by the Academy of Motion Picture Arts and Sciences (AMPAS), the awards are an international recognition of excellence in cinematic achievements, as assessed by the Academy's voting membership. The various category winners are awarded a copy of a golden statuette as a trophy, officially called the "Academy Award of Merit", although more commonly referred to by its nickname, the "Oscar". The statuette depicts a knight rendered in the Art Deco style.</p>
+                    <hr>
+                    <div class="location">
+                        <h5 id="see-location1" onclick="">See Location</h5>
+                    </div>
+                    <div class="another-map">
+                        <div id="map1"></div>
+                    </div>
+                </div>
+
+                <hr class="separator">
+
+                <div class="event">
+                    <img  class="event-img" src="img/ab9a9d1d68128cd2ac695aeb40deb63269bb65fe.jpg" alt="oscar">
+                    <hr>
+                    <p>The Berlin International Film Festival (German: Internationale Filmfestspiele Berlin), usually called the Berlinale, is a film festival held annually in Berlin, Germany.Founded in West Berlin in 1951, the festival has been held every February since 1978 and is one of the "Big Three" alongside the Venice Film Festival in Italy and the Cannes Film Festival in France. Since 2019, Mariette Rissenbeek serves as the executive director of the festival, while Carlo Chatrian is the artistic director.</p>
+                    <hr>
+                    <div class="location2">
+                        <h5 id="see-location2" onclick="">See Location</h5>
+                    </div>
+                    <div class="and-another-map">
+                        <div id="map2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>© 2020 Makhaomi, Inc. All rights reserved.</p>
+        </footer>
+    </div>
+    <div class="login-form">
+        <div class="login">
+            <img onclick="closePopup()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/480px-OOjs_UI_icon_close.svg.png" alt="close">
+            <h1>CONTACT US</h1>
+            <input id="username" type="text" name="username" placeholder="Your Name">
+            <input id="email" type="text" name="email" placeholder="Your Email">
+            <input id="message" type="text" name="message" placeholder="Your Message">
+            <button class="signIn" onclick="closePopup()">SUBMIT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
