@@ -53,6 +53,7 @@ img {
 
 /*blog page*/
 .block {
+  transition: all 0.4s linear;
   box-shadow: 0 0 20px black;
   display: flex;
   flex-direction: row;
@@ -71,10 +72,12 @@ img {
   height: 100%;
 }
 .block:hover {
+  cursor: pointer;
   box-shadow: 0 0 5px black;
   margin: 0;
   position: relative;
-  opacity: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 @media (max-width: 768px) {
