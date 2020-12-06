@@ -12,6 +12,13 @@ $(document).ready(function(){
         $this.html() == "Read More..." ? $this.html("Read Less") : $this.html("Read More...")      
     });
 });  
+$(document).ready(function(){
+    $("#readMore3").click(function(){
+        $("#hidden3").fadeToggle("slow");
+        let $this = $(this)
+        $this.html() == "Read More..." ? $this.html("Read Less") : $this.html("Read More...")      
+    });
+});
 function popup(){
     document.querySelector(".login-form").style.display ="flex"
     $(".login-form").animate({opacity: "1"}, "slow")

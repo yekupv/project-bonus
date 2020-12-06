@@ -172,6 +172,7 @@ button:hover {
 /*RIGHT SIDE CONTENT*/
 
 .sidebar {
+  height: 1340px;
   text-align: center;
   padding: 50px 20px 0 20px;
   grid-area: sidebar;
